@@ -58,7 +58,7 @@ Instructions:
 3. At this point we have a working button that properly creates tasks with due dates however the due date value isn't currently being used.
 
     + We want to display these due dates and highlight any overdue items. We can do this in `src/component/todos.js`
-    + Inside the map function above the return function make a variable called `color` and set it to `"#ffffffff"` or `"white"` (#ffffffff is white's hex color value)
+    + Inside the map function above the return function make a variable called `color` and set it to `#ffffffff""` or `"white"` (#ffffffff is white's hex color value)
     + Then check if todays date to the due date of the task. If the due date is in the past change then set `color` to a different color. 
         1. (You do not have to keep the original card white, however you MUST make overdue cards a different color. Play around and find colors that you like.) 
         2. Note that your due date value is a string. You will have to use `new Date(/*due date variable*/)` to compare it to the current date 
